@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bedrock writes a bedtime story for you">
+    <meta name="author" content="Omar Omar">
+    <title>Bedrock Storyteller</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/examples/cover/">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = '/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = '/cover.css') }}" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h4 class="masthead-brand">Bedrock Storyteller</h4>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link " href="/">Home</a>
+                    <a class="nav-link active" href="/about" style="margin-right: 20px;">About</a>           
+                </nav>
+            </div>
+        </header>
+        <div class="jumbotron bg-grey">
+            <h2 class="display-4 ">Bedrock Storyteller</h2>
+        </div>
+        <main role="main" class="inner cover text-justify">
+            <p style="font-size: 18px;">This is a simple web application that uses AI to generate bedtime stories. It's developed for educational purposes to demonstrate the power of AI in generating human-like text. The solution consists of the following:</p>
+            <ul style="font-size: 18px;">
+                <li>Advanced NLP Model: Utilizing the Bedrock model amazon.titan-text-lite-v1 for enhanced natural language processing capabilities.</li>
+                <li>Scalable Backend Processing: Implementing a containerized Lambda function using aws-lambda-web-adapter for efficient and flexible backend operations, or using Flask, a Python web framework, for backend development.</li>
+                <li>Secure User Management: Leveraging AWS Cognito for robust authentication, authorization, and user lifecycle management, including login and logout functionalities.</li>
+                <li>Pre-Signup Confirmation: Integrating an AWS Cognito pre-signup Lambda function to ensure seamless user confirmation processes.</li>
+                <li>Efficient Deployment: Employing AWS SAM (Serverless Application Model) for streamlined deployment of the solution, ensuring rapid iterations and updates.</li>
+                <li>Intuitive Frontend Design: Building the frontend with HTML to deliver a user-friendly and engaging interface for seamless interactions.</li>
+            </ul>
+            <p style="font-size: 18px;">These components come together to create a powerful and versatile solution that showcases the synergy of advanced AI capabilities, secure user management, efficient deployment practices, and intuitive frontend design. Enjoy!!</p>
+        </main>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Bedrock Storyteller by <a
+                    href="https://omar2cloud.github.io/">Omar</a>.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
