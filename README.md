@@ -250,3 +250,10 @@ The next step is to explore adding AWS Cognito sign-in and sign-out functionalit
 ## Future Work
 
 [ ] enhance data chunking of the Bedrock Storyteller Flask application.
+
+---
+
+## References
+
+- [AWS Cognito](https://aws.amazon.com/cognito/)
+- [fastapi-response-streaming](https://github.com/awslabs/aws-lambda-web-adapter/tree/main/examples/fastapi-response-streaming)
